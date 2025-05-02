@@ -1,13 +1,3 @@
-cat: core/game: Is a directory
-__version__ = "3.2.0b2"
+from bcps.core.game import catbase, battle, map, gamoto, localizable
 
-from bcps import core, cli
-
-
-__all__ = ["core", "cli"]
-
-
-def run():
-    from bcps import __main__
-
-    __main__.main()
+__all__ = ["catbase", "battle", "map", "gamoto", "localizable"]
